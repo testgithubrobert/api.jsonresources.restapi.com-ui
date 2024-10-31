@@ -1,4 +1,5 @@
 import NavigationBar from "./Navigation.bar.component";
+import Footer from "./Footer.component";
 
 function RegisterToken() {
     return (
@@ -39,6 +40,7 @@ function RegisterToken() {
                     </form>
                 </article>
             </section>
+            <Footer />
         </>
     );
 }

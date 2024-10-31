@@ -10,8 +10,8 @@ function NavigationBar() {
         },
         {
             id: String(`${uuid()}`),
-            navigation: "Resources",
-            href: "/#resources"
+            navigation: "Guide",
+            href: "/guide"
         },
         {
             id: String(`${uuid()}`),

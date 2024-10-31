@@ -1,4 +1,5 @@
 import NavigationBar from "./Navigation.bar.component";
+import Footer from "./Footer.component";
 
 function RefreshToken() {
     return (
@@ -37,6 +38,7 @@ function RefreshToken() {
                     </form>
                 </article>
             </section>
+            <Footer />
         </>
     );
 }

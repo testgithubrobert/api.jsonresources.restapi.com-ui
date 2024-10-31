@@ -191,10 +191,10 @@ function Main() {
                 </article>
             </section>
 
-            <a href="/#nav" title="return up">
-                <button type="button" id="navigation-button" className="navigation-button"><span className="material-symbols-outlined">
-keyboard_arrow_up
-</span></button>
+            <a href="/#" title="return up">
+                <button type="button" id="navigation-button" className="navigation-button">
+                    <span className="material-symbols-outlined">keyboard_arrow_up</span>
+                </button>
                 </a>
         </main>
         {

@@ -13,7 +13,17 @@ function Footer() {
             id: String(`${uuid()}`),
             key: "Developer",
             href: "https://www.github.com/testgithubrobert/"
-        }
+        },
+        {
+            id: String(`${uuid()}`),
+            key: "Privacy",
+            href: "http://localhost:5000/api.jsonresources.restapi.com/privacy"
+        },
+        {
+            id: String(`${uuid()}`),
+            key: "Terms",
+            href: "http://localhost:5000/api.jsonresources.restapi.com/terms"
+        },
     ]);
 
     return (
@@ -24,11 +34,12 @@ function Footer() {
                     {
                         keys.map((key) => (
                             <li key={key.id} id={key.id} className={key.id}>
-                                    <a href={key.href}>{key.key}</a></li>
+                                    <a href={key.href} target="_blank">{key.key}</a></li>
                         ))
                     }
                 </ul>
                 <p>developer.jsonresources.rest.com &copy;right {format(new Date(), "yyyy")}</p>
+                <br />
             </article>
         </footer>
     );  
