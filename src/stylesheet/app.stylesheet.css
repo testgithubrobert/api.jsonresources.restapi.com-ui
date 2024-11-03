@@ -465,8 +465,8 @@ section[class="http-methods-section"] > article :is(article) > div[class="value"
 }
 
 /*  */
-/* section[class="http-methods-section"] {
-    height: 75rem;
+section[class="api-guide-section"] {
+    min-height: 50rem;
     width: min(100%, 100%);
     display: flex;
     align-items: center;
@@ -474,13 +474,73 @@ section[class="http-methods-section"] > article :is(article) > div[class="value"
     flex-direction: column;
     flex-flow: column nowrap;
 }
-section[class="http-methods-section"] > article {
-    height: 25rem;
+section[class="api-guide-section"] > article {
+    min-height: 40rem;
     width: min(80%, 80%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
 }
-section[class="http-methods-section"] > article :is(h1) {
+section[class="api-guide-section"] > article :is(h1) {
     font-size: 1.5em;
-} */
+} 
+section[class="api-guide-section"] > article :is(p) {
+    font-size: 1em;
+    color: #101010;
+    font-weight: calc(200 + 180);
+} 
+section[class="api-guide-section"] > article :is(article) {
+    height: 13em;
+    width: min(100%, 80em);
+    border-radius: .5em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    flex-flow: column nowrap;
+}
+section[class="api-guide-section"] > article :is(article) > div {
+    height: 10em;
+    width: min(90%, 70em);
+    border: none;
+    font-size: 1em;
+    background-color: hsl(0, 0%, 90%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 1em;
+}
+section[class="api-guide-section"] > article :is(article) > div > textarea {
+    height: 4em;
+    width: min(90%, 70em);
+    border: none;
+    font-size: 1em;
+    background-color: hsl(0, 0%, 90%);
+}
+section[class="api-guide-section"] > article :is(article) :where(button) {
+    height: 3em;
+    width: 10em;
+    cursor: pointer;
+    border: none;
+    border-radius: .3em;
+    color: #fff;
+    background-color: #000;
+}
+section[class="api-guide-section"] > article :is(article) > div[class="value"] {
+   height: 10em;
+   width: min(90%, 90%);
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+section[class="api-guide-section"] > article :is(article) > div[class="value"] > p {
+    font-size: .9em;
+    color: #fff;
+    max-width: 60em;
+    font-weight: calc(200 + 200);
+}
 
 /*  */
 button[class="navigation-button"] {
@@ -559,6 +619,7 @@ footer[class="footer"] > article :is(p) {
     text-decoration: none;
     color: #000;
     font-weight: bold;
+    text-align: center;
     font-size: .9em;
 }
 
